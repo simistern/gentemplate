@@ -1,7 +1,7 @@
 .navbar{
   background-color: white;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   width: 100%;
   position: fixed;
 }
@@ -23,8 +23,41 @@ html {
   background-size: cover;
 }
 
+.logo{
+  float: left;
+  font-size: 4em;
+  font-family: Helvetica; /* Miltonian Tattoo */
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	line-height: 49px;
+}
+
+.navbarlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.navbarlistitems a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbarlistitems a:hover {
+    background-color: lightblue;
+}
+.navbarlistitems {
+    float: right;
+}
+
 .splashtitle{
-  background-color: lightblue;
+  background-color: lightblue, 0.3;
   position: fixed;
   margin-top: 18%;
   margin-left: 35%;
@@ -38,37 +71,14 @@ html {
   line-height: 49px;
 }
 
-
-.logo{
-  float: left;
-  font-size: 4em;
-  font-family: 'Miltonian Tattoo';
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: 49px;
+.emphasizedtitle{
+  color: #0080ff;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
+.firstname{
+  color: #595959;
 }
 
-li {
-    float: right;
-}
-
-li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: lightblue;
+.skillsetlist{
+  margin-left: 150px;
 }
