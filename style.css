@@ -1,0 +1,74 @@
+.navbar{
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  position: fixed;
+}
+
+/*.navmenu{
+  float: left;
+  display: inline;
+  background-color: lightgreen;
+  width : 4px !important;
+  padding-right: 70%;
+}*/
+
+
+html {
+  background: url(assets/citylookingup.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.splashtitle{
+  background-color: lightblue;
+  position: fixed;
+  margin-top: 18%;
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 600px;
+  font-size: 4em;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  line-height: 49px;
+}
+
+
+.logo{
+  float: left;
+  font-size: 4em;
+  font-family: 'Miltonian Tattoo';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 49px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: lightblue;
+}
