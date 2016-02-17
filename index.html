@@ -3,9 +3,14 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="vendors/jquery.easings.min.js"></script>
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Miltonian+Tattoo" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <!-- Optional theme -->
@@ -54,23 +59,52 @@
   </div>
 </div>
 
-<div class="row splashtitle">
-  Full-Stack <span class="emphasizedtitle">Javascript.</span>
-<ul class="skillsetlist">
-  <li>Node</li>
-  <li>Express</li>
-  <li>Angular</li>
-  <li>RethinkDB</li>
-</ul>
+
+<!--div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br> -->
+
+<!--fullpage JS   -->
+
+<div class="fullpage">
+  <div class="section">
+  <div id="div1" class="row splashtitle" style="display:none;">
+    Full-Stack <span class="emphasizedtitle">Javascript.</span>
+    <ul class="skillsetlist">
+      <li>Node</li>
+      <li>Express</li>
+      <li>Angular</li>
+      <li id="dbtag">RethinkDB</li>
+    </ul>
+  </div>
 </div>
+<div class="secondSection">
+  <ul>
+    <li>It's javascript all the way down: Nodejs is quickly becoming a powerhouse in modern development practice. By providing an end-to-end Javascript solution, your codebase is much easier to read and update. </li>
+    <li>Busy Backends: Protect your users with sophisticated backends Want a slick modern looking website? Using angular we can deliver awesome responsiveness. The only limit is your imagination </li>
+    <li>Fabulous Front-Ends: Want a slick modern looking website? Using angular we can deliver awesome responsiveness. The only limit is your imagination </li>
+    <li>Awesome API's: Let me help you build a strong backend API to let your app reach even further. Need to connect to another API? That's no problem either!</li>
+    <li>Education: I have a passion for teaching and have a curriculum ready to go for students who are interested in learning to code. Have a look at my tutorials in the meantime! </li>
+  </ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script>
+$(document).ready(function(){
+  //  $("button").click(function(){
+        $("#div1").fadeIn(3000);
+//    });
+$('#fullpage').fullpage();
+
+});
+</script>
+</div>
+</div>
+</body>
 
 <!-- Client Portal
-
 status/progress bar front and center: Your project is in the {{}} phase, which should be completed in {{days}}.
 Links:
   See Proposal Docs - links to download .docx files (better than having it on the site because of images, pdfs, etc. start with downloading)
   timeline - Find generic timeline template
-  Wireframes
+  Wireframes - just links to images
   Slack
   ToDo list
   tickets
@@ -81,18 +115,5 @@ Phases
   Scalable Product
   Client Review
   Production
-
-
-
 -->
-<ul>
-<li>It's javascript all the way down: Nodejs is quickly becoming a powerhouse in modern development practice. By providing an end-to-end Javascript solution, your codebase is much easier to read and update. </li>
-<li>Busy Backends: Protect your users with sophisticated backends Want a slick modern looking website? Using angular we can deliver awesome responsiveness. The only limit is your imagination </li>
-<li>Fabulous Front-Ends: Want a slick modern looking website? Using angular we can deliver awesome responsiveness. The only limit is your imagination </li>
-<li>Awesome API's: Let me help you build a strong backend API to let your app reach even further. Need to connect to another API? That's no problem either!</li>
-<li>Education: I have a passion for teaching and have a curriculum ready to go for students who are interested in learning to code. Have a look at my tutorials in the meantime! </li>
-</ul>
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-</body>
 </html>
